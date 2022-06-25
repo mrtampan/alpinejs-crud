@@ -1,24 +1,72 @@
 
-<!-- <html>
+<html>
           <head>
-            <title>esbuild tutorial</title>
+            <title>AlpineJs Template</title>
         
             <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="shortcut icon" href="#" />
-        
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
             <script type="module" src="dist/bundle.js"></script>
           </head>
-          <body></body>
-        </html> -->
+          <body>
+<div x-init="console.log('Memulai aplikasi')">
+            <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">AlpineJs Template</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="bg-info mb-3 h-100" x-data="myData">
+              &nbsp;
+              <div class="container bg-light rounded-4 p-4">
+              <span><b>Nama Lengkap</b></span>
+              <br/>
+              <span x-text='firstname + " " + lastname'></span>
+              <br/>
+              <br/>
+              <span><b>Jenis Kelamin</b></span>
+              <br/>
+              <span x-text="(gender == 'perempuan') ? 'perempuan' : 'laki-laki'"></span>
+              <br/>
+              <br/>
+              <span><b>Kapan dia ulang tahun</b></span>
+              <br/>
+              <button x-show="hbdOpen == false ? true : false" @click="hbdTrigger" class="btn btn-primary btn-sm">Tekan untuk mengetahui</button>
+              <span x-show="hbdOpen">14 juni 1999</span>
+              <br/>
+              <br/>
+              <span><b>Teman teman di group twice</b></span>
+              <br/>
+              <ul class="list-group">
+              <template x-for="member in memberGroup" :key="member.id">
+                <li class="list-group-item" x-text="member.nama"></li>
+                </template>
+              </ul>
+              
+              </div>
 
-<div x-data="dropdown">
-          <button @click="toggle">Expand</button>
-       
-          <span x-show="open">Content...</span>
-      </div>
-       
-      <div x-data="dropdown">
-          <button @click="toggle">Expand</button>
-       
-          <span x-show="open">Some Other Content...</span>
-      </div>
+
+
+            </div>
+          </div>
+          </body>
+        </html>
+
