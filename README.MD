@@ -16,6 +16,4 @@ npm run dev
 
 ### deployment
 
-```
-npm run build
-```
+upload to your hosting or github page
