@@ -1,17 +1,12 @@
 {
-  "name": "boilerplate_alpine",
+  "name": "alpinejs-crud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/alpine.js --bundle --outfile=dist/bundle.js",
-    "start": "esbuild src/alpine.js --outfile=dist/bundle.js --bundle --minify --watch"
+    "dev": "php -S 127.0.0.1:9090"
   },
   "author": "mrtampan",
-  "license": "MIT",
-  "dependencies": {
-    "alpinejs": "^3.9.3",
-    "esbuild": "^0.14.27"
-  }
+  "license": "MIT"
 }

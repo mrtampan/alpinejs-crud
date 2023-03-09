@@ -1,7 +1,6 @@
-# Alpinejs Gilee
+# Alpinejs Crud
 
-BoilerPlate alpinejs
-
+Alpinejs crud only frontend
 
 ## Installation
 
@@ -9,34 +8,14 @@ BoilerPlate alpinejs
 npm install
 ```
 
-
 ### Running
 
 ```
-npm run start
+npm run dev
 ```
-
-with running webserver.
-
-```
-php -S 127.0.0.1:8989
-```
-
 
 ### deployment
-
 
 ```
 npm run build
 ```
-
-### Demo
-
-http://heyoo.ueuo.com/
-
-### Issue
-
-cannot create template reusable because:
-
-https://stackoverflow.com/questions/65710987/reusable-alpine-js-components
-
